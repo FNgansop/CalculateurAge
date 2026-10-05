@@ -20,8 +20,22 @@
             <Button Text="Calculer"
                     Command="{Binding CalculerCommand}"/>
 
-            <Label Text="{Binding Resultat}" FontSize="20"
+            <Button Text="Effacer"
+                    Command="{Binding EffacerCommand}"/>
+
+            <Label Text="{Binding Resultat}"
+                   FontSize="20"
                    IsVisible="{Binding ResultatVisible}"/>
+
+            <Label Text="{Binding Message}"
+                   FontSize="18"
+                   IsVisible="{Binding ResultatVisible}"/>
+
+            <Label
+                Text="{Binding JoursRestants,
+                StringFormat='Prochain anniversaire dans {0} jour(s)'}"
+                FontSize="16"
+                IsVisible="{Binding ResultatVisible}"/>
 
         </VerticalStackLayout>
     </ScrollView>
