@@ -6,34 +6,29 @@
     Title="Calculateur">
 
     <ScrollView>
-        <VerticalStackLayout
-            Padding="20"
-            Spacing="12">
+        <VerticalStackLayout Padding="20" Spacing="12">
 
-            <Label
-                Text="Nom"
-                FontSize="16" />
+            <Label Text="Nom" FontSize="16"/>
 
             <Entry
                 x:Name="entryNom"
-                Placeholder="Votre nom" />
+                Placeholder="Votre nom"/>
 
             <Label
                 Text="Date de naissance"
-                FontSize="16" />
+                FontSize="16"/>
 
-            <DatePicker
-                x:Name="pickerDate" />
+            <DatePicker x:Name="pickerDate"/>
 
             <Button
                 x:Name="btnCalculer"
                 Text="Calculer"
-                Clicked="OnCalculerClicked" />
+                Clicked="OnCalculerClicked"/>
 
             <Label
                 x:Name="lblResultat"
                 FontSize="20"
-                IsVisible="False" />
+                IsVisible="False"/>
 
         </VerticalStackLayout>
     </ScrollView>
